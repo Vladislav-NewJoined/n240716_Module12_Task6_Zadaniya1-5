@@ -1,5 +1,6 @@
 package task12_3_1.zadanye3_4;
 
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -52,6 +53,23 @@ public class Zadanye3_4 {
             collection.insertOne(doc2);
 
             System.out.println("Документы успешно добавлены в коллекцию");
+
+            // Получаем все документы из коллекции
+            FindIterable<Document> documents = collection.find();
+
+// Печатаем заголовки столбцов
+            System.out.println("name\t\t|\tage\t|\tcity");
+            System.out.println("--------------------------------");
+
+// Печатаем данные из коллекции
+            for (Document doc : documents) {
+                String name = doc.getString("name");
+                int age = doc.getInteger("age");
+                String city = doc.getString("city");
+                System.out.println(name + "\t\t|\t" + age + "\t|\t" + city);
+            }
+
+
         } catch (Exception e) {
             System.err.println("Ошибка при работе с MongoDB: " + e.getMessage());
         }
