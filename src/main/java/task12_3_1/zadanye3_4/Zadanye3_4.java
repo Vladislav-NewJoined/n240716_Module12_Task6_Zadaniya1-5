@@ -1,6 +1,5 @@
-package task12_3_1.zadanye3_3;
+package task12_3_1.zadanye3_4;
 
-import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 // Пароль: не указан (Аутентификации по паролю нет)
 // Для проверки настроек можно сделать такой тестовый запрос:  "select * from users" в DB Browser в папке "Consoles -→ somedbPGtest"
 
-public class Zadanye3_3 {
+public class Zadanye3_4 {
     public static void main(String[] args) {
         System.out.println("""
             Модуль 12. Базы данных и Git. Задание №5:
