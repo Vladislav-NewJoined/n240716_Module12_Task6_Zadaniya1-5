@@ -6,12 +6,14 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-// Команда в терминале для создания базы данных PostgreSQL: docker run --name postgresTest -d -p 5432:5432 -e POSTGRES_DB=somedbPGtest -e POSTGRES_USER=someuser -e POSTGRES_PASSWORD=123 postgres:alpine
-// Значения параметров для настройки соединения в DBeaver (пришли в ответ на команду в терминале: docker inspect postgresTest
-// Сервер (Хост): 172.17.0.2 (нужно писать localhost вместо этого)
-// База данных: somedbPGtest
-// Пользователь: someuser
-// Пароль: 123
+import java.util.ArrayList;
+
+// Команда в терминале для создания базы данных
+// Значения параметров для настройки соединения
+// Сервер (Хост): localhost
+// База данных: mmongoTest
+// Пользователь: не указан (Аутентификации по пользователю нет)
+// Пароль: не указан (Аутентификации по паролю нет)
 // Для проверки настроек можно сделать такой тестовый запрос:  "select * from users" в DB Browser в папке "Consoles -→ somedbPGtest"
 
 public class Zadanye3_3 {
@@ -29,6 +31,25 @@ public class Zadanye3_3 {
 
 
         try (var mongoClient = MongoClients.create("mongodb://localhost:27017")) {
+            // Подключаемся к базе данных "mongoTest"
+            MongoDatabase database = mongoClient.getDatabase("mongoTest");
+
+            // Создаем коллекцию, если она еще не существует
+            if (!database.listCollectionNames().into(new ArrayList<>()).contains("mongoTestCollection")) {
+                database.createCollection("mongoTestCollection");
+                System.out.println("Коллекция 'mongoTestCollection' создана");
+            }
+
+            // Получаем коллекцию
+            MongoCollection<Document> collection = database.getCollection("mongoTestCollection");
+
+            // Добавляем документы в коллекцию
+            Document doc1 = new Document("name", "John").append("age", 30).append("city", "New York");
+            Document doc2 = new Document("name", "Alice").append("age", 25).append("city", "London");
+            collection.insertOne(doc1);
+            collection.insertOne(doc2);
+
+            System.out.println("Документы успешно добавлены в коллекцию");
         } catch (Exception e) {
             System.err.println("Ошибка при работе с MongoDB: " + e.getMessage());
         }
