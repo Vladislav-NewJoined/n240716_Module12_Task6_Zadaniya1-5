@@ -28,23 +28,9 @@ public class Zadanye3_3 {
             """);
 
 
-        // Подключение к MongoDB
-//        try (MongoClient mongoClient = MongoClients.create("{your connection string}")) {
         try (var mongoClient = MongoClients.create("mongodb://localhost:27017")) {
-//            MongoDatabase database = mongoClient.getDatabase("your_database_name");
-//            MongoCollection<Document> collection = database.getCollection("your_collection_name");
-//
-//            // Вывод всех данных из коллекции
-//            for (Document doc : collection.find()) {
-//                System.out.println(doc.toJson());
-//            }
         } catch (Exception e) {
             System.err.println("Ошибка при работе с MongoDB: " + e.getMessage());
         }
-
-
-
-
-
     }
 }
