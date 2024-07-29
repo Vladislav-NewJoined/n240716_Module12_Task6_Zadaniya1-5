@@ -81,7 +81,6 @@ public class Zadanye3_6 {
                 System.out.println(employee_id + "\t\t\t|\t" + first_name + "\t|\t" + last_name + "\t|\t" + email + "\t|\t" + phone_number + "\t|\t" + hire_date + "\t|\t" + job_id + "\t|\t" + salary);
             }
 
-
         } catch (Exception e) {
             System.err.println("Ошибка при работе с MongoDB: " + e.getMessage());
         }
