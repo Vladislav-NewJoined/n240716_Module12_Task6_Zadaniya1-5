@@ -13,7 +13,7 @@ public class Zadanye3 {
         System.out.println("""
             Я создал репозиторий на ‘https://github.com/’ с названием ‘n240716_Module12_Task6_Zadaniya1-5_TestRep’
             и индикатором доступа: ‘Public’.
-            Ссылка на этот репозиторий:
+            Ссылка на этот репозиторий: https://github.com/Vladislav-NewJoined/n240716_Module12_Task6_Zadaniya1-5.git
             """);
     }
 }

@@ -12,7 +12,7 @@ public class Zadanye5 {
         System.out.println("""
             Я создал репозиторий на ‘https://github.com/’ с названием ‘n240716_Module12_Task6_Zadaniya1-5_TestRep’
             и индикатором доступа: ‘Public’.
-            Ссылка на этот репозиторий:
+            Ссылка на этот репозиторий: https://github.com/Vladislav-NewJoined/n240716_Module12_Task6_Zadaniya1-5.git
             Я делаю изменения в проекте, и затем делаю 'commit' и 'push', чтобы сохранить изменения в созданном
             мной репозитории.""");
     }
