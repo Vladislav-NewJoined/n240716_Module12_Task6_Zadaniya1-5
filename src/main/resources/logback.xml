@@ -1,4 +1,5 @@
 <configuration>
+
         <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
                 <encoder>
                         <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
@@ -7,7 +8,10 @@
 
         <root level="INFO">
                 <appender-ref ref="STDOUT" />
-                </root>
+        </root>
 
         <logger name="org.mariadb.jdbc" level="INFO" />
+
+        <logger name="org.mongodb.driver.cluster" level="ERROR" />
+
 </configuration>
