@@ -19,12 +19,11 @@ import java.util.ArrayList;
 public class Zadanye2 {
     public static void main(String[] args) {
         System.out.println("""
-            Модуль 12. Базы данных и Git. Задание №5:
+            Модуль 12. Базы данных и Git. Задание №6:
             Задание:
-            2. Напишите запрос MongoDB для отображения ФИО и даты рождения всех лиц из представленной таблицы
+            2. Что такое GitLab?
             
-            Решение (Я в коде оперировал не с датой рождения, а с датой приёма на работу, т.е. с 'hire_date') (ПРИМЕЧАНИЕ: при первом запуске кода выполните команду 'mongod' в терминале IntelliJ IDEA
-               для выполнения соединения с сервером 'Mongo DB'. После этого запускайте код):
+            Решение:
             """);
 
         try (var mongoClient = MongoClients.create("mongodb://localhost:27017")) {

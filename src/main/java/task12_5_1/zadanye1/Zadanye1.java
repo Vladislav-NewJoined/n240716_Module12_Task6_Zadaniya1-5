@@ -18,12 +18,11 @@ import java.util.ArrayList;
 public class Zadanye1 {
     public static void main(String[] args) {
         System.out.println("""
-            Модуль 12. Базы данных и Git. Задание №5:
+            Модуль 12. Базы данных и Git. Задание №6:
             Задание:
-            1. Напишите запрос MongoDB для отображения всех данных из представленной таблицы
+            1. Что такое GitHub? Для чего он используется?
             
-            Решение (ПРИМЕЧАНИЕ: при первом запуске кода выполните команду 'mongod' в терминале IntelliJ IDEA
-               для выполнения соединения с сервером 'Mongo DB'. После этого запускайте код):
+            Решение:
             """);
 
         try (var mongoClient = MongoClients.create("mongodb://localhost:27017")) {
