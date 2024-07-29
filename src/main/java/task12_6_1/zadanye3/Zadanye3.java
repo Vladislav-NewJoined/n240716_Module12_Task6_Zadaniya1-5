@@ -1,14 +1,5 @@
 package task12_6_1.zadanye3;
 
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Projections;
-import org.bson.Document;
-
-import java.util.ArrayList;
-
 public class Zadanye3 {
     public static void main(String[] args) {
         System.out.println("""
