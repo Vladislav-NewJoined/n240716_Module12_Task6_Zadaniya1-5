@@ -1,4 +1,4 @@
-package task12_5_1.zadanye1;
+package task12_6_1.zadanye1;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClients;
@@ -8,14 +8,7 @@ import org.bson.Document;
 
 import java.util.ArrayList;
 
-// Значения параметров для настройки соединения c сервером 'Mongo DB'
-// Сервер (Хост): localhost
-// База данных: mongoTest
-// Коллекция: mongoTestCollection
-// Пользователь: не указан (Аутентификации по пользователю нет)
-// Пароль: не указан (Аутентификации по паролю нет)
-
-public class Zadanye1 {
+public class Zadanye1_2 {
     public static void main(String[] args) {
         System.out.println("""
             Модуль 12. Базы данных и Git. Задание №6:

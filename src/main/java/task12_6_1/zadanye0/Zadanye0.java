@@ -1,16 +1,6 @@
-package task12_5_1.zadanye0;
+package task12_6_1.zadanye0;
 
 import java.sql.*;
-
-// Команда в терминале для создания контейнера mongo и базы данных MongoDB:
-// docker run --name mongoTest -d -p 27017:27017 mongo
-// URL: mongodb://localhost:27017/mongoTest
-// Значения параметров для настройки соединения в DBeaver (пришли в ответ на команду в терминале: docker inspect postgresTest
-// Сервер (Хост): 172.17.0.2 (нужно писать localhost вместо этого)
-// База данных: somedbPGtest
-// Пользователь: someuser
-// Пароль: 123
-// Для проверки настроек можно сделать такой тестовый запрос:  "select * from users" в DB Browser в папке "Consoles -→ somedbPGtest"
 
 public class Zadanye0 {
 
