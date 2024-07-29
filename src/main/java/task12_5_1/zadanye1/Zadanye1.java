@@ -26,7 +26,6 @@ public class Zadanye1 {
                для выполнения соединения с сервером 'Mongo DB'. После этого запускайте код):
             """);
 
-
         try (var mongoClient = MongoClients.create("mongodb://localhost:27017")) {
             // Подключаемся к базе данных "mongoTest"
             MongoDatabase database = mongoClient.getDatabase("mongoTest");
