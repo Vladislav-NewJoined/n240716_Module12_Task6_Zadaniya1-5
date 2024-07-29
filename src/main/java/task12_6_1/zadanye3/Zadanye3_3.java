@@ -1,4 +1,4 @@
-package task12_6_1.zadanye2;
+package task12_6_1.zadanye3;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClients;
@@ -9,12 +9,12 @@ import org.bson.Document;
 
 import java.util.ArrayList;
 
-public class Zadanye2_2 {
+public class Zadanye3_3 {
     public static void main(String[] args) {
         System.out.println("""
             Модуль 12. Базы данных и Git. Задание №6:
             Задание:
-            2. Что такое GitLab?
+            3. Создайте свой первый репозиторий на GitHub
             
             Решение:
             """);
