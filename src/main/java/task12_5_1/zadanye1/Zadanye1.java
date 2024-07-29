@@ -1,4 +1,4 @@
-package task12_3_1.zadanye3_6;
+package task12_5_1.zadanye1;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClients;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 // Пользователь: не указан (Аутентификации по пользователю нет)
 // Пароль: не указан (Аутентификации по паролю нет)
 
-public class Zadanye3_6 {
+public class Zadanye1 {
     public static void main(String[] args) {
         System.out.println("""
             Модуль 12. Базы данных и Git. Задание №5:
